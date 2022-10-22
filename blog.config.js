@@ -2,10 +2,10 @@
 const BLOG = {
   AUTHOR: 'crystal', // 作者
   BIO: '吾生也有涯，而知也无涯', // 作者简介
-  LINK: 'https://tropical-bagel-c19.notion.site/b1d06d87c1dc449286c3a2c9abe842a3', // 网站地址
+  LINK: ''https://tangly1024.com', // 网站地址
   KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
-  process.env.NOTION_PAGE_ID || 'b1d06d87c1dc449286c3a2c9abe842a3', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
+  process.env.NOTION_PAGE_ID || '9d5b2e344b1640f89dffc9416828cada', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
   DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否显示调试按钮
 
