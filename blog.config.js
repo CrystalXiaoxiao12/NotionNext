@@ -1,11 +1,11 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/zh/features/personality
 const BLOG = {
-  AUTHOR: 'crystal', // 作者
-  BIO: '吾生也有涯，而知也无涯', // 作者简介
-  LINK: 'https://blog-crystal520.vercel.app/', // 网站地址
+  AUTHOR: 'tangly1024', // 作者
+  BIO: '一个普通的干饭人🍚', // 作者简介
+  LINK: 'https://tangly1024.com', // 网站地址
   KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
-  process.env.NOTION_PAGE_ID || '9d5b2e344b1640f89dffc9416828cada', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
+  process.env.NOTION_PAGE_ID || '02ab3b8678004aa69e9e415905ef32a5', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
   DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否显示调试按钮
 
@@ -25,16 +25,11 @@ const BLOG = {
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXXX
   APPEARANCE: 'light', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
 
-  // 字体相关
-  FONT: 'font-sans', // 预设三种文章字体 ['font-sans', 'font-serif', 'font-mono'] @see /lib/font.js https://www.tailwindcss.cn/docs/font-family
-  FONT_URL: 'https://fonts.font.im/css2?family=Noto+Serif+SC&display=swap', // 谷歌字体中国站镜像;对应的国际站地址：https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap
-  FONT_CUSTOM: ['-apple-system', 'BlinkMacSystemFont', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Segoe UI"', '"PingFang SC"', 'HarmonyOS_Regular', '"Hiragino Sans GB"', '"Microsoft YaHei"', '"Helvetica Neue"', 'Helvetica', '"Source Han Sans SC"', '"Noto Sans CJK SC"', '"WenQuanYi Micro Hei"', 'Arial', 'sans-serif'],
-
-  // 自定义google字体示例： 请先将FONT 改为  'font-custom'， 并将FONT_URL改为你的字体地址，同时在FONT_CUSTOM中指定你的 fontfamily
-  // 以下是示例：
-  // FONT: 'font-custom',
-  // FONT_URL: 'https://fonts.font.im/css2?family=Ma+Shan+Zheng&display=swap',
-  // FONT_CUSTOM_FAMILY: ['"Times New Roman"', '"Ma Shan Zheng"'],
+  // 自定义字体示例： 请先将 CUSTOM_FONT 改为 true， 并将 CUSTOM_FONT_URL 改为你的字体CSS地址，同时在 CUSTOM_FONT_SANS 与 CUSTOM_FONT_SERIF 中指定你的 fontfamily
+  CUSTOM_FONT: true, // 是否使用自定义字体
+  CUSTOM_FONT_URL: ['https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.6.0/lxgwwenkaiscreen.css'], // 自定义字体的CSS
+  CUSTOM_FONT_SANS: ['LXGW WenKai Screen'], // 自定义无衬线字体
+  CUSTOM_FONT_SERIF: ['LXGW WenKai Screen'], // 自定义衬线字体
 
   // 图标字体
   FONT_AWESOME_PATH: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/all.min.css', // 图标库CDN ，国内推荐BootCDN，国外推荐 CloudFlare https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
@@ -57,10 +52,10 @@ const BLOG = {
   PREVIEW_TAG_COUNT: 16, // 首页最多展示的标签数量，0为不限制
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-  CONTACT_EMAIL: 'crystalhuanxie@163.com',
+  CONTACT_EMAIL: 'mail@tangly1024.com',
   CONTACT_WEIBO: '',
   CONTACT_TWITTER: '',
-  CONTACT_GITHUB: 'https://github.com//CrystalXiaoxiao12',
+  CONTACT_GITHUB: 'https://github.com/tangly1024',
   CONTACT_TELEGRAM: '',
 
   // 鼠标点击烟花特效
@@ -157,7 +152,7 @@ const BLOG = {
     icon: process.env.NEXT_PUBLIC_NOTION_PROPERTY_ICON || 'icon'
   },
 
-  ENABLE_CACHE: process.env.ENABLE_CACHE || true, // 开启缓存 会将Notion数据缓存在内存中，稍微提升访问速度，但要更新内容需要多次刷新页面
+  ENABLE_CACHE: process.env.ENABLE_CACHE || false, // 开启缓存 会将Notion数据缓存在内存中，稍微提升访问速度，但要更新内容需要多次刷新页面
 
   AVATAR: '/avatar.png', // 作者头像，被notion中的ICON覆盖。如果没有ICON则取public目录下的avatar.png
   TITLE: process.env.NEXT_PUBLIC_TITLE || 'NotionNext BLOG', // 站点标题 ，被notion中的页面标题覆盖
