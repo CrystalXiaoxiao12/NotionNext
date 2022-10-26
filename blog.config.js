@@ -60,7 +60,7 @@ const BLOG = {
   CONTACT_EMAIL: 'crystalhuanxie@163.com',
   CONTACT_WEIBO: '',
   CONTACT_TWITTER: '',
-  CONTACT_GITHUB: 'https://github.com/CrystalXiaoxiao12',
+  CONTACT_GITHUB: 'https://github.com//CrystalXiaoxiao12',
   CONTACT_TELEGRAM: '',
 
   // 鼠标点击烟花特效
