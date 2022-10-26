@@ -2,7 +2,7 @@
 const BLOG = {
   AUTHOR: 'crystal', // 作者
   BIO: '吾生也有涯，而知也无涯', // 作者简介
-  LINK: 'https://vercel.com//crystal520//blog', // 网站地址
+  LINK: 'https://blog-crystal520.vercel.app/', // 网站地址
   KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
   process.env.NOTION_PAGE_ID || '9d5b2e344b1640f89dffc9416828cada', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
@@ -57,10 +57,10 @@ const BLOG = {
   PREVIEW_TAG_COUNT: 16, // 首页最多展示的标签数量，0为不限制
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-  CONTACT_EMAIL: 'mail@tangly1024.com',
+  CONTACT_EMAIL: 'crystalhuanxie@163.com',
   CONTACT_WEIBO: '',
   CONTACT_TWITTER: '',
-  CONTACT_GITHUB: 'https://github.com/tangly1024',
+  CONTACT_GITHUB: 'https://github.com/CrystalXiaoxiao12',
   CONTACT_TELEGRAM: '',
 
   // 鼠标点击烟花特效
